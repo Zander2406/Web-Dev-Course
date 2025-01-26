@@ -1,0 +1,11 @@
+Google Core Web Vitals
+
+CLS - Cumulative Layout Shift: Layout of a webpage shifts due to any factor which can be harmful for user experience. Layouts shouldn't shift while page is loading
+
+LCP - Largest Contextual Paint: How much time it takes for the largest element in a weboage to load, should be loaded within 2.5 sec
+
+FID - First Input Delay: How much time it takes to process an input from an user, it should be less than 100ms according to google.
+
+These are updated and these are the most common/crucial We can use lightrom from google chrome devtools to check these scores
+
+Meta tag helps provide an overall description for the webpage that is being loaded which can be used by the seacrh engine to get a description for the webpage, it is used to increase SEO scores
