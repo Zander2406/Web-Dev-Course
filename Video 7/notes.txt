@@ -1,0 +1,3 @@
+Label tags can be used along with input tags and to make sure the label tag works properly we can just enter the id of the input tag in the for parameter of the label tag making sure it works
+
+Autofocus focuses your cursor to the textbox that has autofocus so that your cursor goes to that field directly
