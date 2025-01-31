@@ -1,0 +1,7 @@
+Audio preload attribute
+
+none - This is the default value and it indicates that the browser should not download the audio without playback selected by the user
+
+metadata - The browser will download preliminary information like the video duration and information and nothing else
+
+auto - This will make the browser download the video in background and also make sure that other content in the page is also taken care of
