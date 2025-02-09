@@ -1,0 +1,9 @@
+For content without any border/margin/padding defined get a default margin/padding  from the browser.
+
+Padding is considered part of the content that is present in the middle and margin is considered on the outside of the content. Border needs to be defined if it is solid or not. In the middle is the content then comes the padding after which comes the border and then comes the margin at the end. Chrome inspect can show the breakdown in a visual sense.
+
+Total height and width of the content is calculated along with the margin, border and padding.
+
+Box-sizing border box makes sure that the content of the box including content, padding and border we will get the desired size with all of them combined instead of just the content excluding padding, border and other stuff.
+
+Margin-collapse : When 2 elements have overlapping margins only the margin with higher value will be applied overall
