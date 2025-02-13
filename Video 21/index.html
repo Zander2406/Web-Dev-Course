@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascade</title>
+    <style>
+        /* This has a specificity of 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* This has a specificity of 1 + 10 = 11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* This has a specificity of 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* This has a specificity of 10 */
+        .cred {
+            color: red;
+        }
+
+        /* Attribute selector */
+        /* This has a specificity of 10 */
+        [data-x=a] {
+            background-color: red;
+        }
+
+        /* This haqs a specificity of 1 + 10 + 10 + 10 + 10 = 41 */
+        /* href is attribute and hover is pseudo class */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>

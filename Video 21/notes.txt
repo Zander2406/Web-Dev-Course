@@ -1,0 +1,12 @@
+CSS contains cascade algorithm for conflicts. This algorithm decides which property gets applied and which one doesn't.
+1. Position and order of appearance matters.  E.G. If the selector is same then the lastest selector will be applied.
+
+2. Specificity is used for different selectors. If the selectors are different then specificity determines which one gets applied.
+
+Specificity order: inline style > ID selector > class or attribute selector > Element selector > Universal selector
+
+Origin: CSS coming from the browser or authorized by the user hold different specificity.
+
+Override: Using the word !important can override even inline css.
+
+To calculate the specificity of an element we can add all the specificity of the tags used in that css to know which one will be used and which one will not be used.
