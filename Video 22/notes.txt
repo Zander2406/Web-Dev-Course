@@ -1,0 +1,9 @@
+width and margin: auto can be used only on block level elements and not inline elements. Block level elements are div, para and inline elements are span.
+
+pixels are the standard units for height and width measurements but along with that for responsive websites we also have vw and vh which will give the width and height of a certain percentage of the viewport/screen area of the browser.
+
+for the em unit we get a multiplier for the inherited font size so if the inherited font size is 18px and the size is set to 2 em it will be 36px and for rem we will get a multiplier for the root property that will be inherited
+
+vmin is the property that says viewport min(width, height) and vmax is viewport max(height, width)
+
+If a percentage is used as a unit then it will take the width of the parent and not the total viewport

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+        
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        .container p {
+            font-size: 2em;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid black;
+            color: black;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ipsum iusto atque vel adipisci rem velit repellat ratione quis quo at odio consequatur necessitatibus totam magni qui provident exercitationem, autem, asperiores tempore laudantium blanditiis illo iste natus! Praesentium necessitatibus dolore harum. Maiores laborum veritatis magni, amet nulla atque soluta, animi expedita facilis maxime repellendus tempore laboriosam.
+        </p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi qui vel delectus, iure deleniti ab culpa. Ex ab quod dolore pariatur, vel porro error maxime repellat distinctio repudiandae doloremque esse eum earum magni excepturi libero accusamus cumque inventore ullam quam debitis aperiam! Doloremque non placeat libero quae deleniti aspernatur molestiae. Reiciendis quaerat libero sed magni debitis praesentium magnam consequuntur quos ab quisquam, necessitatibus, a incidunt obcaecati, doloribus vitae deserunt recusandae? Ipsum, hic corrupti? Molestiae autem perferendis, fuga neque odio debitis quas cupiditate iste omnis eius perspiciatis est fugit soluta at obcaecati, incidunt libero. Asperiores doloribus aperiam sit! Quae dicta illum earum? Rerum repudiandae unde quae eveniet nam doloribus quisquam ratione amet ad? Voluptatem voluptatibus aspernatur numquam amet at soluta, ducimus culpa omnis.
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>
