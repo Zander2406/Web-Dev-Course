@@ -1,0 +1,5 @@
+For inline elements they do not take top margins, to implement top margins we need to use the proprty of inline block
+
+Width will also not work for inline elements they need to be converted to inline block elements in order for width to take effect
+
+When display none is used the whole element disappears but when visibility hidden is used the box just becomes invisible but retains all it's properties
