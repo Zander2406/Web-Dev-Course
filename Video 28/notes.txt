@@ -1,0 +1,13 @@
+By default CSS positions elements as static where we cannot use the parameters to change the position of the element in the x y or z axis. In order to use these properties we need to change the position property to absolute or relative.
+
+Relative position adjusts the position of the element relative to the other elements.
+
+Position absolute finds the nearest positioned element in the heirarchy and positions itself according to that element. If the parent element has position property (not the default one) then it positions according to that but if not then it finds the nearest one.
+
+Fixed position fixes the position of an element regardless of the content on the page and the scroll position of the page.
+
+Sticky position helps the element to stick to the top/bottom even while the page is being scrolled.
+
+Fixed and sticky are different: in fixed the element will be stuck on the same position regardless of anything but for sticky the element will stick to teh desired position only when we reach it by scrolling.
+
+Transform, filter or perspective properties can also make an element appear as positioned
