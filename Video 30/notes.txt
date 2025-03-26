@@ -1,0 +1,9 @@
+We can make variables in CSS
+
+What ever variables we declare in root are global variables
+
+We can also declare local variables for use in different places as per our need
+
+We can also have a default color value that will make sure if our variable is not found there is a fall back color
+
+What kind of values can CSS variables hold? - They can hold any kind of values like pixel measurements, urls, strings, number values etc.
