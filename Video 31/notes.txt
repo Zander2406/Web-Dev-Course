@@ -1,0 +1,7 @@
+We can change the styles based on the devices that access a website
+
+For media query we can choose what CSS styles will be applied on certain media devices or under certain conditions
+
+Media types - all (for all types of devices), print (for printers), screen (for desktop/phone screens), speech (for speech devices for blind people)
+
+In general we use this to break our website to cater to different devices where we present our websites in different ways for different sized devices like phones, tablets, monitors and ultrawide monitors
