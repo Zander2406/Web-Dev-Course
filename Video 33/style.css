@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color: rgb(70, 70, 70);
+    --seccolor: yellow;
+    --defpad: 15px;
+}
+
+.navbar {
+    background-color: var(--color);
+    padding: var(--defpad);
+}
+
+
+.button {
+    padding: 13px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button a:hover {
+    color: var(--seccolor);
+}
