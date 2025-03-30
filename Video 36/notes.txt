@@ -1,0 +1,1 @@
+More than 1 style tags can be used in a single html file
