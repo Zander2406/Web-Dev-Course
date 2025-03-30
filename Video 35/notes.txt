@@ -1,0 +1,5 @@
+:first child selector gets used only if the element we are targetting is the first child of the element that contains it
+
+The first line selector does not have a cap on the number of words/characters, it depends on the first line that is rendered on the viewing device
+
+::before is a way to dynamically insert an element using CSS they are also called pseudo elements
