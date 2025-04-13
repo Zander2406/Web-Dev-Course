@@ -2,4 +2,4 @@ When we use float if the image is not contained in the container then it overflo
 
 To specify any element which will not allow any element to float with it we can give it the property of clear (right, left or both)
 
-Float and clear should be avoided unless compelled to use it since they are not very usere friendly instead using flexbox will be a much better option
+Float and clear should be avoided unless compelled to use it since they are not very user friendly instead using flexbox will be a much better option

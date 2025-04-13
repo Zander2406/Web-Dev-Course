@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise 5</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 2000px;
+        }
+        .background {
+            background-color: rgb(62, 180, 219);
+            width: 100%;
+            height: 2000px;
+        }
+
+        .navbar {
+            background-color: rgb(85, 137, 177);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 20px;
+            margin: 20px;
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .left-panel {
+            background-color: green;
+            width: 40%;
+            margin: 10px;
+            height: 700px;
+            float: left;
+            margin-left: 100px;
+        }
+
+        .right-panel {
+            background-color: blueviolet;
+            width: 40%;
+            margin: 10px;
+            height: 700px;
+            float: right;
+            margin-right: 100px;
+        }
+
+        .content {
+            border: 2px solid black;
+            border-radius: 100px;
+            font-size: 40px;
+            clear: both;
+            width: 70%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+        }
+
+        .logo {
+            background-color: orange;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 20000;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+        <div class="left-panel">
+            Left Panel
+        </div>
+        <div class="right-panel">
+            Right Panel
+        </div>
+        <div class="content">
+            Welcome to Sigma Web Development Express
+        </div>
+        <div class="logo"></div>
+        <footer class="footer">
+            This is the footer for this website
+        </footer>
+    </div>
+</body>
+</html>
