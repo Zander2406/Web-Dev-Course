@@ -1,0 +1,27 @@
+We use flex box in the container that holds the items that we need to shift and not the items themselves
+
+We can use the flexbox property to align our items horizontally and vertically, mostly flexbox is used to align our items in the center
+
+The items in a flexbox do not lay left to right but they lay in the flex direction and we can change the flex direction for the container which will arrange our order accordingly
+
+By default the flex direction is row
+
+The direction in which the items are laying/flex direction is called our main axis and the direction which is perpendicular to our main axis is called cross axis
+
+When we change our flex direction we change our axis as well
+
+The justify-content works along the main axis and align-items works along the cross axis
+
+The start and end of the main axis is called flex start and flex end
+
+And similarly the start and end of the cross axis is called the cross start and cross end
+
+The size along the main axis is main size and the size along the cross axis is cross size
+
+Order can help us to lay items and the higher the order the later the item is and by default the order is 0
+
+Flex grow helps us determine the size of an individual item flex grow is 0 by default
+
+Flex shrink helps an item shrink faster relative to the other elements when the viewport shrinks
+
+Align self is used to change the position of individual items
