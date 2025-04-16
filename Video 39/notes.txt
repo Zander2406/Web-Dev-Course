@@ -1,0 +1,25 @@
+In grid we can define the number of rows and columns
+
+The space between any 2 grid lines is called grid track
+
+Grid area is the area between 4 intersecting grid lines
+
+We can place objects in a grid manually and even overlap items as well.
+
+We can also configure the width of each row and column
+
+In a grid we can number the grid lines either psitively going in the correct direction or number them negatively going in the reverse direction
+
+We can also name the grid lines
+
+For grid row and grid column attribute the syntax is grid row: start grid line/ end grid line; and the same will be followed for grid column as well
+
+If we do not define a height or width then the items will stretch themselves to fit the grid cell automatically even if we assign a single item multiple cells
+
+We can position objects in a grid using the grid lines and also by naming grid areas
+
+fr is a unit in grids that takes a fraction of the available width
+
+Justify content moves the whole grid itself and not just the items inside inside the container
+
+place-content works for both justify content and align content
