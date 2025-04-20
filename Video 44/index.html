@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design the Grid</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+    </style>
+    <style>
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80vw;
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .right ul li span {
+            font-size: 16px;
+        }
+
+        main {
+            width: 90vw;
+            justify-items: center;
+            margin: auto;
+        }
+
+        .download-box {
+            padding-top: 30px;
+            justify-items: center;
+            padding-bottom: 60px;
+        }
+
+        .download-box h1 {
+            font-size: 48px;
+            font-family: 'Segoe UI', sans-serif;
+            display: inline-block;
+        }
+
+        .download-box h1 strong {
+            font-weight: 700;
+        }
+
+        .download-box h3 {
+            font-size: 24px;
+            font-family: 'Segoe UI', sans-serif;
+            width: 55%;
+            word-wrap: break-word;
+        }
+
+        .download-box button {
+            background-color: #00b6d1;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border-width: 0px !important;
+            cursor: pointer;
+            min-height: 48px;
+            min-width: 256px;
+            border: none;
+        }
+
+        .download-version {
+            display: flex;
+            width: 55vw;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 24px;
+        }
+
+        .download-version img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .download-grid {
+            width: 960px;
+            height: 880px;
+            display: grid;
+            grid-template-columns: [first] 320px [second] 320px [third] 320px;
+            align-items: center;
+            gap: 23px;
+        }
+
+        .download-grid .download-item {
+            max-width: 302px;
+            padding: 16px;
+            background-color: #f9f9f9;
+            text-align: center;
+            border-radius: 10px;
+            height: 170px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .download-item .hash {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+
+        .download-item button {
+            background-color: #5cb85c;
+            color: white;
+            font-size: 12px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .news-letter {
+            background-color: #222;
+            width: 100vw;
+            height: 648px;
+        }
+
+        footer {
+            height: 600px;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Design the body of this website https://bit.ly/UltraEdit-CWH -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="" srcset="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>For business</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Resources</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Academic Licensing</span></li>
+                    <li><span>Our Company</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                            height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path
+                                d="M5 5.82759H7.7M11 5.82759H9.5M7.7 5.82759H9.5M7.7 5.82759V5M9.5 5.82759C9.18351 6.95937 8.52075 8.02923 7.76429 8.96946M5.83571 11C6.44723 10.4377 7.13788 9.74802 7.76429 8.96946M7.76429 8.96946C7.37857 8.51724 6.83857 7.78558 6.68429 7.45455M7.76429 8.96946L8.92143 10.1724"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M13.5 19L14.3333 17M18.5 19L17.6667 17M14.3333 17L16 13L17.6667 17M14.3333 17H17.6667"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M14 10V8C14 5.17157 14 3.75736 13.1213 2.87868C12.2426 2 10.8284 2 8 2C5.17157 2 3.75736 2 2.87868 2.87868C2 3.75736 2 5.17157 2 8C2 10.8284 2 12.2426 2.87868 13.1213C3.75736 14 5.17157 14 8 14H10"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M10 16C10 13.1716 10 11.7574 10.8787 10.8787C11.7574 10 13.1716 10 16 10C18.8284 10 20.2426 10 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22C13.1716 22 11.7574 22 10.8787 21.1213C10 20.2426 10 18.8284 10 16Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M4 16.5C4 17.9045 4 18.6067 4.33706 19.1111C4.48298 19.3295 4.67048 19.517 4.88886 19.6629C5.39331 20 6.09554 20 7.5 20"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M20 7.5C20 6.09554 20 5.39331 19.6629 4.88886C19.517 4.67048 19.3295 4.48298 19.1111 4.33706C18.6067 4 17.9045 4 16.5 4"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M17 17L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="download-box">
+            <h1>Download <strong>UltraEdit</strong> for Windows</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34" color="#000000"
+                fill="none" style="padding-left: 20px;">
+                <path d="M8.5 15.5H15.5M8.5 10.5H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M10.5 3C10.2752 3.01018 10.0515 3.02267 9.8294 3.03746C5.64639 3.31601 2.31441 6.70126 2.04024 10.9511C1.98659 11.7828 1.98659 12.6441 2.04024 13.4758C2.1401 15.0236 2.82343 16.4568 3.62791 17.6669C4.09501 18.5141 3.78674 19.5715 3.30021 20.4952C2.94941 21.1611 2.77401 21.4941 2.91484 21.7346C3.05568 21.9752 3.37026 21.9828 3.99943 21.9982C5.24367 22.0285 6.08268 21.6752 6.74868 21.1832C7.1264 20.9041 7.31527 20.7646 7.44544 20.7486C7.5756 20.7326 7.83177 20.8383 8.34401 21.0496C8.8044 21.2396 9.33896 21.3568 9.8294 21.3894C11.2536 21.4843 12.7435 21.4845 14.1706 21.3894C18.3536 21.1109 21.6856 17.7257 21.9598 13.4758C22.0134 12.6441 22.0134 11.7828 21.9598 10.9511C21.939 10.6288 21.9006 10.3114 21.8456 10"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 5H17.509" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M21.7948 4.59071C21.9316 4.77342 22 4.86477 22 5C22 5.13523 21.9316 5.22658 21.7948 5.40929C21.1801 6.23024 19.6101 8 17.5 8C15.3899 8 13.8199 6.23024 13.2052 5.40929C13.0684 5.22658 13 5.13523 13 5C13 4.86477 13.0684 4.77342 13.2052 4.59071C13.8199 3.76976 15.3899 2 17.5 2C19.6101 2 21.1801 3.76976 21.7948 4.59071Z"
+                    stroke="currentColor" stroke-width="1.5" />
+            </svg>
+
+            <h3>Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                text editor.</h3>
+
+            <a href="\">
+                <button>DOWNLOAD MAC OR LINUX VERSION</button>
+            </a>
+        </div>
+
+        <div class="download-version">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" alt="" srcset="">
+            <h3>Download UltraEdit</h3>
+            <span>
+                v2024.3 (released 2025-03-21) | Hotfix information
+            </span>
+        </div>
+
+        <div class="download-grid">
+            <div class="download-item">
+                <h3>English</h3>
+                <h4>&nbsp;</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>Deutsch</h3>
+                <h4>German</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>Italiano</h3>
+                <h4>Italian</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>Español</h3>
+                <h4>Spanish</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>français</h3>
+                <h4>French</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>Português brasileiro</h3>
+                <h4>Brazilian Portuguese</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>日本</h3>
+                <h4>Japanese</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>한국어</h3>
+                <h4>Korean</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>华语</h3>
+                <h4>Chinese</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+            <div class="download-item">
+                <h3>華語</h3>
+                <h4>Traditional Chinese</h4>
+                <a href="ue_english_64.exe">
+                    <button>Download 64-bit</button>
+                </a>
+                <div class="hash">
+                    <div>SHA256</div>
+                    <div style="font-size: 8px;">ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-letter">
+            Space to subscribe for the news-letter
+        </div>
+    </main>
+
+    <footer>
+        This is the space for the footer
+    </footer>
+</body>
+
+</html>
