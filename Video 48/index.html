@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate the ball inside the containing div</title>
+    <style>
+        .box {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 70px;
+            animation: x-axis 5s linear 0s infinite forwards,
+                       y-axis 5s linear 0s infinite forwards;
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+        }
+
+        @keyframes x-axis {
+            0% {
+                left: 0;
+            }
+            25% {
+                left: 13vw;
+            }
+            50% {
+                left: 33vw;
+            }
+            75% {
+                left: 53vw;
+            }
+            100% {
+                left: 73vw;
+            }
+        }
+
+        @keyframes y-axis {
+            0% {
+                bottom: 0;
+            }
+
+            12.5% {
+                bottom: 200px;
+            }
+
+            25% {
+                bottom: 0px;
+            }
+
+            37.5% {
+                bottom: 150px;
+            }
+
+            50% {
+                bottom: 0px;
+            }
+
+            62.5% {
+                bottom: 100px;
+            }
+
+            75% {
+                bottom: 0px;
+            }
+
+            87.5% {
+                bottom: 50px;
+            }
+
+            100% {
+                bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>
