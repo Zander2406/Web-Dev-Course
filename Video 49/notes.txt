@@ -1,0 +1,9 @@
+For the first property we have object-fit: cover; we can use this and make our image cover the whole area we defined for that image specifically so that the image covers that much area by maintaining it's aspect ratio. This will not have any effect from the parent's dimensions. And this might lead to data loss where parts of the image might be removed inorder for it to fit
+
+object-fit: contain; on the other hand might leave empty space because it will maintain the aspect ratio of the image and display the entire image
+
+object-position selects the part of the image that we want to display
+
+By default the object-fit property is set to fill which will distort the image
+
+We can also use the image as a background for our container and if the image is smaller than the dimensions of the container then the image will repeat it self inside that container and we can also determine the direction in which the image repeats itself
