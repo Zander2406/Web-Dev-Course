@@ -1,0 +1,9 @@
+Arrays are mutable unlike strings which are immutable
+
+Arrays have functions like toString()
+
+shift works like pop and unshift works like push
+
+Using delete we can clear the object from memory but we still preserve the array's memory
+
+Concat returns a new array with the elements combined
