@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program to calculate factorial of a number using reduce and using for loops
+    -->
+
+    <script>
+        let num = 6;
+        let newArr = [];
+
+        for (let index = 1; index <= num; index++) {
+            newArr.push(index);
+        }
+
+        console.log(newArr.reduce((a, b)=>{return a*b;}));
+
+        let prod = 1;
+        for (let index = 2; index <= num; index++) {
+            prod = prod * index;
+        }
+
+        console.log(prod);
+    </script>
+</body>
+</html>
