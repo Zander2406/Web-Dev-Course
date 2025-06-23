@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.card .index {
+    text-align: center;
+    width: 36px;
+}
+
+.card .thumbnail {
+    position: relative;
+}
+
+.card .thumbnail img {
+    position: relative;
+}
+
+.card .thumbnail .duration {
+    position: absolute;
+    top: 90px;
+    left: 130px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    padding: 0px 3px;
+}
+
+.card img {
+    height: 110px;
+    border-radius: 10px;
+}
+
+.card .details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
+}
+
+.card .details .specifics ul {
+    display: flex;
+    gap: 23px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
