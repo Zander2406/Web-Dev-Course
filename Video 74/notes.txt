@@ -1,0 +1,5 @@
+In javascript when we lsiten for an event on an element by default javascript also listen for the event on the parent. Which means if you trigger a event on a child element then then if the parent element also has the same trigger the event will get triggered. Due to the concept that since we are inside the child element already we are also inside the parent element which makes the parent event triggering justified and this is called event bubbling.
+
+Now to stop this we can take the event object and then use the stop propagation property of that event object. This will stop triggering the event of the parent element.
+
+Set interval and Set timeout can trigger events repeatedly after set timers or once after a set timer respectively. We can also use clearinterval and cleartimeout to stop these events from occuring using the code that is returned from them.
