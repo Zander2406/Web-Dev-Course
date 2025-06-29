@@ -1,0 +1,7 @@
+Javascript is an async language which means that the whole script will be executed first before the async functions are taken into account.
+
+We can have callback funtions inside another callback function and doing it multiple times makes the code complex and hard to read/maintain. This is called a pyramid of doom. And this is why we use promises.
+
+In prom1 we have made a promise that will resolve/end when the timeout function gets over. So with .then we take the value returned by the resolve and print it. And .catch to take the value for the reject.
+
+In promises er pass 2 funtions, resolve and reject. We then use .then to capture the data returned by resolve and use .catch to capture the data returned by reject.
