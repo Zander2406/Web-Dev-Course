@@ -1,0 +1,15 @@
+Now in some programs we will need to fetch data and during that time we will also need to do other tasks using the script. Now for this we can do it in 2 different ways.
+
+One way is to make that funtion a promise and wait for the promise to return us a value/data and we process it accordingly. But the problem with it is that then we need to put the rest of our script inside a then funtion to make sure that the processing of that data doesn't cause any errors.
+
+Another way to do this would be to use async. We can convert our function to an async function and that will ensure that our function keeps runnig in the background while other processes are running in the foreground.
+
+In simple terms we need to use await in an async function. So inorder to use the await property we need to wrap our function in another async function which will be our main function.
+
+fetch needs two .then functions to parse the data. In the first promise we get the promise to get the data and in the second promise we get the promise to parse the data in json or text form.
+
+We need to wait for the promise to settle. When the promise is settled it means it is either been resolved or rejected.
+
+Resolve means promise has settled successfully and reject means the promise has not settled successfully.
+
+We can use POST/GET or other methods as well with fetch requests. These can allow us to pass more options like headers and other data as well.
