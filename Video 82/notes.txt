@@ -1,0 +1,9 @@
+IIFE means Immediately Invoked Function Expression, this is a function that runs as soon as it is defined. It is used to avoid polluting teh global namespace, execute an async-await, etc.
+
+Destructuring is a way of assigning multiple values to multiple variables. For example to assign values inside a list to variables we need to present the variables in the form of that list like instead of x, y = [1, 2] we need to write [x, y] = [1, 2] which is how x will get assigned the value 1 and y will get assigned 2. But in a list that is longer and we need to store the rest of the variables we can us another method. [x, y, ...rest] = [1, 2, 3, 4, 5] here x and y will get assigned their following variables but after that the remaining values will be assigned to the ...rest variable. We can use any name instead of rest with the three dots (...).
+
+We can extract variables from objects as well using the object syntax
+
+The ... is called the spread operator. This spreads out an array incase we have an array and we need to pass that in a function. This maps the values to their indices and passes them accordingly.
+
+When we use var to declare our variables during runtime the program tends to move them at the top of the block so that but the variable itself (not it's value assigned) are available through out the program when we use let this does not happen so we need to access variables declared using let after declaring them. This is called Hoisting. JavaScript hoists declarations and not initialization which is why the value is not available until it is initialized. let and const do not hoist. Funtions are hoisted automatically.
