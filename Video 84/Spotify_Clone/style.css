@@ -162,7 +162,7 @@ body {
     position: fixed;
     bottom: 40px;
     background: #dad5d5;
-    border-radius: 30px;
+    border-radius: 10px;
     filter: invert(1);
     width: 70vw;
     padding: 12px;
@@ -218,10 +218,11 @@ body {
 .seekbar {
     height: 2px;
     width: 98%;
-    border: 2px solid black;
+    background: black;
     border-radius: 10px;
     position: absolute;
     bottom: 0;
+    margin: 6px;
 }
 
 .circle {
@@ -232,6 +233,11 @@ body {
     position: relative;
     bottom: 6px;
     left: 0%;
+    transition: left 0.5s;
+}
+
+.songbuttons img {
+    cursor: pointer;
 }
 
 

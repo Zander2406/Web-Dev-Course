@@ -1,4 +1,5 @@
 console.log("Let's write JavaScript");
+let currentSong = new Audio();
 
 
 async function getSongs() {
@@ -20,6 +21,12 @@ async function getSongs() {
     return songs;
 }
 
+const playmusic = (track)=>{
+    currentSong.src = "/songs/" + track
+    currentSong.play();
+    play.src = "pause.svg";
+}
+
 async function main() {
     // Get the list of all songs
     let songs = await getSongs();
@@ -38,6 +45,26 @@ async function main() {
             <img class="invert" src="play.svg" alt="" srcset="">
         </div></li>`;
     }
+
+    // Attach an event listener to each song
+    Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e=>{
+        e.addEventListener("click", element=>{
+            console.log(e.querySelector("div").firstElementChild.innerHTML);
+            playmusic(e.querySelector("div").firstElementChild.innerHTML.trim());
+        })
+    })
+
+    // Attach an event listener to play, next and previous
+    play.addEventListener("click", ()=>{
+        if(currentSong.paused){
+            currentSong.play();
+            play.src = "pause.svg";
+        }
+        else{
+            currentSong.pause();
+            play.src = "play.svg";
+        }
+    })
 
     
     
