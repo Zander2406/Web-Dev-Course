@@ -1,12 +1,25 @@
 console.log("Let's write JavaScript");
 let currentSong = new Audio();
 
+function secondsTOMinutesSeconds(seconds) {
+    if (isNaN(seconds) || seconds < 0) {
+        return "Invalid input";
+    }
+
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor (seconds % 60);
+
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+
+    return `${formattedMinutes}:${formattedSeconds}`;
+}
+
 
 async function getSongs() {
 
     let a = await fetch("http://192.168.0.147:3000/songs/");
     let response = await a.text();
-    console.log(response);
 
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -21,15 +34,21 @@ async function getSongs() {
     return songs;
 }
 
-const playmusic = (track)=>{
+const playmusic = (track, pause=false)=>{
     currentSong.src = "/songs/" + track
-    currentSong.play();
-    play.src = "pause.svg";
+    if(!pause) {
+        currentSong.play();
+        play.src = "pause.svg";
+    }
+
+    document.querySelector(".songinfo").innerHTML = decodeURI(track);
+    document.querySelector(".songtime").innerHTML = "00:00/ 00:00";
 }
 
 async function main() {
     // Get the list of all songs
     let songs = await getSongs();
+    playmusic(songs[0], true);
 
 
     // List all the songs in the playlist
@@ -66,8 +85,21 @@ async function main() {
         }
     })
 
-    
-    
+
+    // Listen for timeupdate event\
+    currentSong.addEventListener("timeupdate", ()=>{
+        console.log(currentSong.currentTime, currentSong.duration);
+        document.querySelector(".songtime").innerHTML = `${secondsTOMinutesSeconds(currentSong.currentTime)}/${secondsTOMinutesSeconds(currentSong.duration)}`;
+        document.querySelector(".circle").style.left = (currentSong.currentTime/currentSong.duration) * 100 + "%";
+    })
+
+
+    // Add an event listener to seekbar
+    document.querySelector(".seekbar").addEventListener("click", e=>{
+        let percent = (e.offsetX/e.target.getBoundingClientRect().width) * 100;
+        document.querySelector(".circle").style.left = percent + "%";
+        currentSong.currentTime = ((currentSong.duration) * percent) / 100;
+    })
 
 }
 
