@@ -89,7 +89,7 @@ async function main() {
     // Listen for timeupdate event\
     currentSong.addEventListener("timeupdate", ()=>{
         console.log(currentSong.currentTime, currentSong.duration);
-        document.querySelector(".songtime").innerHTML = `${secondsTOMinutesSeconds(currentSong.currentTime)}/${secondsTOMinutesSeconds(currentSong.duration)}`;
+        document.querySelector(".songtime").innerHTML = `${secondsTOMinutesSeconds(currentSong.currentTime)} / ${secondsTOMinutesSeconds(currentSong.duration)}`;
         document.querySelector(".circle").style.left = (currentSong.currentTime/currentSong.duration) * 100 + "%";
     })
 
@@ -100,6 +100,32 @@ async function main() {
         document.querySelector(".circle").style.left = percent + "%";
         currentSong.currentTime = ((currentSong.duration) * percent) / 100;
     })
+
+    // Add an event listener for hamburger
+    document.querySelector(".hamburger").addEventListener("click", ()=>{
+        document.querySelector(".left").style.left = "0";
+    })
+
+    // Add an event listener for close button
+    document.querySelector(".close").addEventListener("click", ()=>{
+        document.querySelector(".left").style.left = "-120%";
+    })
+
+
+    // Add an event listener to previous
+    previous.addEventListener("click", ()=>{
+        console.log("Previous Clicked");
+    })
+
+
+    // Add an event listener to next
+    next.addEventListener("click", ()=>{
+        console.log("Next Clicked");
+    })
+
+
+
+
 
 }
 

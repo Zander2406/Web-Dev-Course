@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.close {
+    display: none;
+}
+
 body {
     background-color: black;
     color: white;
@@ -73,11 +77,15 @@ body {
     background-color: rgb(34, 34, 34);
 }
 
-.header > *{
+.header>* {
     padding: 20px;
 }
 
 .spotifyPlaylists {
+    padding: 16px;
+}
+
+.spotifyPlaylists h1 {
     padding: 16px;
 }
 
@@ -86,7 +94,7 @@ body {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 70vh;
 }
 
@@ -98,7 +106,7 @@ body {
     position: relative;
 }
 
-.card > * {
+.card>* {
     padding-top: 10px;
 }
 
@@ -123,7 +131,7 @@ body {
     transition: all 1s ease-out;
 }
 
-.buttons > * {
+.buttons>* {
     margin: 0 12px;
 }
 
@@ -160,12 +168,13 @@ body {
 
 .playbar {
     position: fixed;
-    bottom: 40px;
-    background: #dad5d5;
-    border-radius: 10px;
+    bottom: 30px;
     filter: invert(1);
-    width: 70vw;
+    background: #e2d9d9;
+    border-radius: 10px;
     padding: 12px;
+    width: 70vw;
+    min-height: 40px;
 }
 
 
@@ -179,6 +188,17 @@ body {
     height: 544px;
     overflow: auto;
     margin-bottom: 44px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburgerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
 }
 
 .songList ul {
@@ -241,7 +261,8 @@ body {
     cursor: pointer;
 }
 
-.songinfo, .songtime {
+.songinfo,
+.songtime {
     color: black;
     padding: 0 12px;
 }
@@ -249,6 +270,61 @@ body {
 .abovebar {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 }
 
+@media (max-width: 1400px) {
+    .left {
+        position: absolute;
+        left: -120%;
+        transition: all 0.3s;
+        z-index: 1;
+        width: 370px;
+    }
 
+    .left .close {
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .playbar {
+        width: calc(100vw - 75px);
+    }
+
+    .seekbar {
+        width: calc(100vw - 120px);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .cardContainer {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .abovebar {
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+    }
+}
