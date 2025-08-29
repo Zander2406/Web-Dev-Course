@@ -17,9 +17,9 @@ function secondsTOMinutesSeconds(seconds) {
 }
 
 
-async function getSongs() {
+async function getSongs(folder) {
 
-    let a = await fetch("http://192.168.0.147:3000/songs/");
+    let a = await fetch(`http://192.168.0.147:3000/${folder}/`);
     let response = await a.text();
 
     let div = document.createElement("div");
@@ -29,14 +29,14 @@ async function getSongs() {
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split("/songs/")[1]);
+            songs.push(element.href.split(`/${folder}/`)[1]);
         }
     }
     return songs;
 }
 
 const playmusic = (track, pause=false)=>{
-    currentSong.src = "/songs/" + track
+    currentSong.src = `/${folder}/` + track
     if(!pause) {
         currentSong.play();
         play.src = "pause.svg";
@@ -131,6 +131,12 @@ async function main() {
         if ((index + 1) < songs.length) {
             playmusic(songs[index + 1]);
         }
+    })
+
+    // Add an event to volume
+    document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e)=>{
+        console.log("Setting volume to ", e.target.volume, "/100");
+        currentSong.volume = parseInt(e.target.value) / 100;
     })
 
 
