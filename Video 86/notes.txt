@@ -1,0 +1,30 @@
+We have seen how to create a server using node.js and how to run that using nodemon to keep refreshing the server. Now we will acma script and common js
+
+In common js we import modules using require keywork and then we can use their functionalities accordingly (almost like using import in python or using include to include headers in c++)
+
+
+Now in common js we use the keywork require to import modules but according to the new syntax we can make our file as a module in the package.json file and then we don't need to use the word require to import modules but we can use the keyword import to import our modules and this is the new ES6 standard
+
+Due the js files being modules we can export and import resources among them as well and there are 2 types of export (default export and named export)
+
+Named export happens when a variable or function is exported using their name and keeps the same name after it is exported
+
+And if anything is exported as default we can use any variable name for it in our import
+
+We can also use the modules in our index files as well
+
+Module wrapper - (function (exports, require, module, __filename, __dirname) {
+  // Your code goes here
+});
+
+Everytime code is written in Node.js it is wrapped in the module wrapper which lets us use certain parts of it and gives us certain keywords like exports, __filename and etc
+
+This is a fuction that wraps every module/code written in a module so it is global for the module itself.
+
+It is a immediately invoked function expression (IIFE)
+
+Side topic: 
+
+The variables assigned in the IIFE are local variables to each module (they act like global variables but are local to each module) and when we use require to fetch the resources from another module we get back the object stored in module.export variable
+
+Now, we can store anything in module.export and export also points to the same object. When we need to pass a single variable/function we assign it to module.export and we can pass more name function using module.export.PropertyName or export.PropertyName but if we reassign export to some other object it confuses the system and module.export is no longer affected by the changes we make to export itself.
