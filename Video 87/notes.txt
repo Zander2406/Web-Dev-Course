@@ -1,0 +1,7 @@
+writeFileSync blocks the whole main thread and works syncronously and this is a bad approach since we need async functions which will not block our whole thread
+
+writeFile solves that problem and works as an async function
+
+fs can create a callback hell if we do multiple functions inside a single one.
+
+If we use a module we can directly use await instead of needing a async function wrapper around it
