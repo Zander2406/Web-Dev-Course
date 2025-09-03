@@ -1,0 +1,19 @@
+Why should we use express js
+It is a framework that is used to make web apps, we use this package to get some functionality in our web apps that can be implemented quickly instead of writing the logic from the beginning
+
+
+Why Nodemon
+We use nodemon to keep restarting our server automatically everytime that we make changes to our server
+
+
+Installing Express@4
+We can install express and if we include @4 we can specifically install express version 4
+
+
+Request parameters and queries
+We can get our slug using parameters and our queries like the text after ? using queries
+
+
+
+Static files
+We can use static from the express package to serve public files
