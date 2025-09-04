@@ -1,0 +1,21 @@
+When a request is done before it reaches any of our routes it goes through middlewarres. We have a request a response and a next to hand off the request to the next middleware. Now unless the request gets resolved (at the route or at the middleware) it can be handed off to the next middleware until it reaches a route. If we resolve the request in a middleware it will not reach a route. Middlewares handle and modify requests
+
+now if we resovle a request in a middleware we cannot pass it off to the next middleware and that will give us an error. So we cannot put next() if we are resolving a request in a middleware
+
+The reason to use middlewares - we can use them to pull the details of a req before we show a route and to verify/fetch other details as well
+
+Middlewares can be made specifically for specific routes as well
+
+The orders of middleware is also important, if the a middleware gets to the request at last and modifies it then that will be the final change.
+
+Types of middlewares: 
+Application level middleware - This middleware is used throughout the app and catches requests before they enter the app
+
+Router level middleware - This type of middleware is used to catch requests that are targetted at specific routers only
+
+Error handling middleware - These are middlewares to handle the error in requests
+
+Built in middlewares - functions like static are builtin middlewares
+
+Third party middleware - These are middlewares made by others and we can use them by importing them
+
