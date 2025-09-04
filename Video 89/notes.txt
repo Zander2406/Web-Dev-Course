@@ -1,0 +1,25 @@
+1. Handling POST and other requests
+We can handle post requests in express like we handle get requests
+
+2. Chaining requests
+We can chain request types for a single path by writing them one after the after instead of writing them separately as well
+
+3. Serving HTML files
+We can serve HTML files by using the sendfile function of res and to serve the files we also need to give it a root or the absolute path
+
+Different response methods in express are:
+.download() - For downloading files
+.end() - To end the response process
+.json() - To send a json response
+.jsonp() - To send a json with jsonp support
+.redirect() - To redirect a request
+.render() - To render a view template
+.send() - To send responses of various types
+.sendFile() - To send files as an octet stream
+.sendStatus() - To set the response status code and send it's string representation as the response body
+
+4. Installing Postman
+Already installed, it is a tool to send different types of requests
+
+5. Express Router
+When we need to handle multiple different routes from a different base URL we can use this. We go ahead and define the urls in a different file and handle the different routes after that addition differently
