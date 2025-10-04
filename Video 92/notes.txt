@@ -1,0 +1,7 @@
+Here we are learning about ejs which is a template engine. Suppose we are making a blog and we want to keep the same format to show our blogs but every time we want a new blog the title, content and other variables will change. And to make that change happen we use template engines. EJS is a template engine.
+
+We can fetch ejs to our packages using npm install ejs and use it with express
+
+To use ejs we need to have ejs files in our views directory, ejs cannot use html files by themselves
+
+The include function helps us make snippets that we can use in all our templates/views
