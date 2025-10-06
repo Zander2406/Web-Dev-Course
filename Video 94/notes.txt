@@ -1,0 +1,7 @@
+In this we will be looking at MongoDB. We can go ahead and install MongoDB Compass to interact with MongoDB in a easy manner but we can also use the shell in mongodb to write queries in it
+
+show databases shows all our databases present
+
+use database switches us to the database that we will use currently
+
+To see all the documents we can use the db.collection.find() command to get all our documents in a course.
