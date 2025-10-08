@@ -1,0 +1,3 @@
+For beginners we can use mongodb which is a npm package and if we need a ODM we can use mongoose
+
+Since mongoDB doesn't have any particular schemas we can use mongoose to enforce a schema and like in any other web framework we can use our models folder to create a database with our particular schema
