@@ -1,0 +1,9 @@
+Tailwind CSS gives us access to utility classes which we can use in production ready websites as well
+
+We can use play.tailwindcss.com
+
+Using npm install -D we can install packages just for development purposes, these are called dev dependencies and the package.json will also show that
+
+Using this we can make sure that we use only the relevant classes that we need instead of importing all the classes from tailwind css which can harm the load times of the end user
+
+And after we are done with ou development we can just include the output.css file in our production which will have all our relevent and used css files
