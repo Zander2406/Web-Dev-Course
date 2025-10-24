@@ -1,0 +1,12 @@
+Notes on hosting
+
+We need computers to host our websites and we can get them from different vendors.
+we can login to vps servers using our terminal to connct to the vps servers
+
+We can use the command ssh root@ip_address to access the computer at that ip address as a root user.
+We will need a password to access it which we will get if we buy our hosting.
+Then we can use linux commands to navigate the terminal of the vps.
+
+While making nodejs apps we should keep our files organized in directories where our routes, models, controllers are all bundled in a src folder which we can use to categorize our files efficiently
+
+We should also use the dotenv package to configure our env variables
