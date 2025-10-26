@@ -1,0 +1,9 @@
+We started a react app using the create react app command in the VS Code terminal. We get a folder structure in there that we can use accordingly. In the src folder we have our files that are displayed and in the public folder we have the files that we want to serve publicly by just using a get request with the file name. These are all our static files.
+
+We can use useState function to create variables that we can change and use in our DOM as well and these are called states. in JavaScript we cannot change variables directly in our DOM, we need to use variables to store the return values from functions and then update that return value again after making additions to it.
+
+In our declaration we name our variable that we will use and also the function that we will use to change the value of that variable.
+
+We can also use components to break our app into parts and handle them separately and also manage them separately.
+
+Basically it turns you components into modules. We can also pass data into components as props.
