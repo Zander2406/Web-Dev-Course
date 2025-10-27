@@ -1,0 +1,1 @@
+Create React App/Vite gives us a folder structure which we can make by ourselves as well, but using a is better
