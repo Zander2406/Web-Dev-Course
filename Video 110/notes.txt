@@ -1,0 +1,7 @@
+In react we use the ternary operator or the logical and (&&) operator to implement if else statements.
+
+For very small components we can also make them inside the App.jsx function itself. But we usually won't be doing that and making component jsx files.
+
+We can integrate tailwind css with our Vite app to use tailwind classes as well.
+
+While we are rendering components using map we also need to provide a unique key to our components so that they are rendered.
