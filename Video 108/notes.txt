@@ -1,0 +1,9 @@
+When we implement the useEffect hook in our react app we can display different things based on the states/variables that are already present in our DOM. When we run our dev server we see that the use effect alerts are appearing twice and this happens because theof the strict mode in react which runs during our dev sessions. The strict mode runs our site twice during this time.
+
+Using states we can change the state of a hook as many times as we want and we can also change the state of the props that we pass through our App page. For instance we can change the state of a prop that we pass from our App page to our components page and that will also be reflected each time we change the prop.
+
+If we don't use any arguments in useEffects then we can make an effect that runs on every render.
+
+Whenever a prop/variable is changed the component is also changed and that way the page is rendered after which the propr is passed to the component and the component is rendered again due to which the effect which runs on every render gets triggered.
+
+The return function of the useEffect is used when components are unmounted from our page. We can unmount components according to our needs (conditional rendering).
