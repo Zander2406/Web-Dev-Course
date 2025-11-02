@@ -1,0 +1,9 @@
+So sometimes we need to create variables which can hold their values even after re-renders. Normally after each re-render (reload) the variables loose their values and are reset to their default values.
+
+When we use useRef we do not trigger useEffect because it does not re-render the component. When we use useState we trigger the useEffect since we re-render components.
+
+Basically useRef does not reload or render components like useState does.
+
+We can also assign reference names to components in our DOM which we can call upon at any time of the program using ref
+
+We should not be using ref in our DOM since it does not re-render the DOM so the value change won't be displayed. We use useState for it since it re-renders the DOM which can display the value.
