@@ -1,0 +1,11 @@
+How to handle events in react
+
+While using JavaScript we used to rely on event handlers to manage events that were going on but in React we can use funtions like onClick and others to handle our events.
+
+We can handle multiple types of events like this like mouse drag over and other events. But handling inputs is a different issue. If we set a value to it we need to create a on change function to change the value of the input
+
+In this scenario the way this is working is that when we use onchange we are changing the value for small fraction of time and the DOM is re-rendered where the value is changed to the text that we just changed it to
+
+The setValue functions run asynchronously and dur to that they always run a bit later than when they are typed in due to which console.log will not get their value on the eact time that they are entered.
+
+If we have our form values empty in the beginning then we need to use a ternary operator to set the value to null or empty string in order to avoid errors
