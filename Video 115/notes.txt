@@ -1,0 +1,1 @@
+In this video we are looking at routers. We will use this to go to elements withour reloading the page in React.
