@@ -1,0 +1,13 @@
+Everytime the state is changed all components are re-rendered which also includes our other extra components apart from App.jsx.
+
+We can stop this by using memo from react which will only re-render the component if the props passed to it are changed.
+
+Now if we use a function to pass props to our components then we will see that the component will re-render even if the prop is not changed explicitly. This happens since everytime our app.jsx is re-rendered the function is re-initialized which makes it a different prop and since it acts like a different prop our component re-renders even after using memo.
+
+We can use useCallback() as a function wrapper in this case. We wrap our function in this wrapper to make sure that our function is not re-initialized on every re-render making it behave like a new prop. This essentially freezes the fucntion on re-renders.
+
+Now we cannot use useCallback incase the fucntion returns values that change based on states or the props change over the course of that program.
+
+useCallback() just memoizes functions like useMemo() memoizes variables.
+
+Now all these fucntions have dependency variables for this exact reason. We can put a dependency variable that if the states change an exact variable then we need to change this function or update this function but if that variable is not changed then we can keep this function frozen.
