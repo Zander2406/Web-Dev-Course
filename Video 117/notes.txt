@@ -1,0 +1,3 @@
+In this we will look at useMemo, when we use some kind of expensive/complex calculation which will take a significant amount of time in our website load times. And each time a state is changed the component re-renders which makes the computation repeat itself. And this can make our website very slow and unresponsive. To mitigate the computation multiple times we can do one thing. Use useMemo (use Memoization) and by this we can just go ahead and keep the result of our computation in the memory until the variables required to do the computation are changed.
+
+We use useMemo to keep values of expensive computations memoized to make our website faster between component re-renders.
