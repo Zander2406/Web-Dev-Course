@@ -1,0 +1,19 @@
+We will be learning Redux toolkit in this video.
+
+In React if we declare a state inside a component then we cannot access that state from any other component. We can pass it to other components using props but nherently we cannot access a state from a different component. This is called prop drilling.
+
+A good example of this could be a shopping cart in a e commerce website. We need to send the product details from the product page to our cart page and make sure it doesn't change in the middle and it can get complex through prop drilling.
+
+The Redux store will act as a single store of truth where we can just read our states/variables from there to get the accurate information everytime.
+
+Wrapping our whole app with the provider will give us access to store in our whole app.
+
+Now we know that in React we need to use specific funtions to change our states like "setCount" but we can go ahead and use our normal convention by using Redux.
+
+A very good explanation is : https://stackoverflow.com/questions/54385323/what-is-a-difference-between-action-reducer-and-store-in-redux
+
+A store is basically what holds all data that the application uses
+
+A reducer is what manipulates the data when we need to
+
+An action is what manipulates the data which carries a name and data with it
