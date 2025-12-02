@@ -1,0 +1,1 @@
+Next.js gives us the option to use routing in a very efficient way. We can create new folders in our app folder to create new routes automatically without any issues. And along with routing we also have the option to create components and other layout options easily.
