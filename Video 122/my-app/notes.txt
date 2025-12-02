@@ -1,0 +1,7 @@
+In Next.js we use server components by default which means the component passes through a server and the return statement renders the HTML code on the client side.
+
+But any logic that we write inside our function and outside our return statement is treated as server logic.
+
+Due to this we cannot use default react components like useState or useEffect unless me make our component a client component by using "use client"
+
+We can also import a client component in our server component if we want to.
