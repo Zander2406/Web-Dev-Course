@@ -1,0 +1,9 @@
+In Next.js we can use server actions to get server side work done.
+
+In this example we tried submitting a form and to submit a form we need the server side to accept the POST data but we did not need to expose an endpoint of any API.
+
+We can see that we can use specific funtions as well as server side components like used in the submit action function. We can have a client side app with a server side component.
+
+But it is best practice to make sure our server actions are grouped together and in a single place instead of all over our frontend files. We can import the server side functions if necessary.
+
+We also used useref in our frontend and to do that we specifically had to specify that this is a client component and not let the default server component loading happen to it.
