@@ -6,7 +6,7 @@ The reason to use middlewares - we can use them to pull the details of a req bef
 
 Middlewares can be made specifically for specific routes as well
 
-The orders of middleware is also important, if the a middleware gets to the request at last and modifies it then that will be the final change.
+The orders of middleware is also important, if a middleware gets to the request at last and modifies it then that will be the final change.
 
 Types of middlewares: 
 Application level middleware - This middleware is used throughout the app and catches requests before they enter the app
