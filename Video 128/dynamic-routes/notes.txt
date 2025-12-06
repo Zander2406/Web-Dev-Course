@@ -1,0 +1,3 @@
+In this video we saw how to handle dynamic routes. For a single slug we can go ahead and make a folder with the word slug in square brackets after our url pattern to use routing.
+
+We can also handle multiple slugs by using ... operator in the square brackets before our slug to unpack multiple slugs
