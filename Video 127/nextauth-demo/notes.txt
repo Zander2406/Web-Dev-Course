@@ -1,0 +1,7 @@
+In this we learn about Next auth to authenticate our apps. In order to to that we need to make a api/auth/[...nextauth] folder with routes file in it.
+
+After that we need to import our auth providers in it.
+
+Then we can go ahead and then we need to wrap our whole app in the authentication wrapper to use the session token through out the app.
+
+We can store our authentication tokens in our .env file
